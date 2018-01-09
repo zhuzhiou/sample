@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @ApiModel
 @lombok.Data
-public class UserVo implements Serializable {
+public class SampleVo implements Serializable {
 
     @ApiModelProperty(name = "username", value = "账号，建议使用手机号、邮箱。")
     private String username;

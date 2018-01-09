@@ -28,7 +28,7 @@ public class SwaggerConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Swagger2 Sample")
+                .title("使用Swagger生成api文档")
                 .version("1.0")//版本
                 .contact(new Contact("朱志欧", "https://user.qzone.qq.com/18403796", "zhuzhiou@qq.com"))//作者
                 .license("unlicensed")
