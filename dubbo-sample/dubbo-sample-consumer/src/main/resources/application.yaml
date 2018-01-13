@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: dubbo-sample-consumer
+    dubbo:
+        scan: samples.dubbo.controller
+        application:
+            name: dubbo-sample-consumer
+        registry:
+            address: zookeeper://192.168.150.129:2181
+        protocol:
+            name: dubbo
+            port: 20880
+---
+server:
+    servlet-path: /
+    port: 8082

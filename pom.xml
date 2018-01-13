@@ -10,8 +10,7 @@
 
     <modules>
         <module>swagger2-sample</module>
-        <!--module>swagger-ui-sample</module-->
-        <!--module>sample-maven-plugin</module-->
+        <module>dubbo-sample</module>
     </modules>
 
 </project>
