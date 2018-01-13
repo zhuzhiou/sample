@@ -36,7 +36,7 @@ public class SwaggerConfiguration {
 
 # 通过XML装配swagger2
 
-如果公司一些项目，虽然使用了spring4但使用xml配置，如果能扫描到这个@Configuration，也无须其他配置，如果无法扫描到此类，去掉@Configuration在xml里加下面的配置。
+如果项目使用xml配置spring，只要能扫描到这个@Configuration，也无须其他配置，否则去掉@Configuration注解并在xml里加下面的配置。
 
 ```xml
 <bean class="samples.swagger.config.SwaggerConfiguration"></bean>
