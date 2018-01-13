@@ -1,7 +1,5 @@
-# 通过XML装配swagger2
-
-公司还有很多遗留系统，虽然使用了spring4，但项目里到处都是xml文件，因此这里做一个没有spring boot示例，因为spring4强大的基因，基本上没有多大的差别。
-
+# 使用swagger2 生成api文档
+ 
 安装swagger2
 
 ```groovy
@@ -36,8 +34,12 @@ public class SwaggerConfiguration {
 }
 ```
 
-XML装配
+# 通过XML装配swagger2
+
+如果公司一些项目，虽然使用了spring4但使用xml配置，如果能扫描到这个@Configuration，也无须其他配置，如果无法扫描到此类，去掉@Configuration在xml里加下面的配置。
 
 ```xml
-<bean class="org.swagger.sample.config.SwaggerConfiguration"></bean>
+<bean class="samples.swagger.config.SwaggerConfiguration"></bean>
 ```
+
+`swagger`的注解将生成接口的描述服务，默认地址为`http://localhost:8080/v2/api-docs`。

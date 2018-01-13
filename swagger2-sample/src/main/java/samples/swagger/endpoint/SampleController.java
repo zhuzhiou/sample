@@ -1,10 +1,9 @@
-package org.swagger.sample.endpoint;
+package samples.swagger.endpoint;
 
 import io.swagger.annotations.*;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
-import org.swagger.sample.vo.ErrorVo;
-import org.swagger.sample.vo.SampleVo;
+import samples.swagger.vo.ErrorVo;
+import samples.swagger.vo.SampleVo;
 import springfox.documentation.annotations.ApiIgnore;
 
 import java.net.URI;
@@ -33,7 +32,7 @@ public class SampleController {
             @ApiImplicitParam(name = "size", value = "每页记录数", required = true, paramType = "query")
     })
     @GetMapping(path = "", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public Page<SampleVo> getUsers(@ApiIgnore @PageableDefault(sort = "username") Pageable pageable, @ApiIgnore SampleVo sampleVo) {
+    public Page<SampleVo> sampleGet(@ApiIgnore Pageable pageable, @ApiIgnore SampleVo sampleVo) {
         return new PageImpl<>(Collections.emptyList(), pageable, 0);
     }
 
