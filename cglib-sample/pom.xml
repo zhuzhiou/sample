@@ -4,15 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zhuzhiou.samples</groupId>
-    <artifactId>dubbo-sample</artifactId>
+    <artifactId>cglib-sample</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>dubbo-sample-parent</module>
-        <module>dubbo-sample-api</module>
-        <module>dubbo-sample-consumer</module>
-        <module>dubbo-sample-provider</module>
+        <module>cglib-sample-parent</module>
+        <module>cglib-sample-helloworld</module>
     </modules>
 
 </project>
