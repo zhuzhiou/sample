@@ -11,7 +11,7 @@
     <modules>
         <module>swagger2-sample</module>
         <module>dubbo-sample</module>
-        <module>cglib-sample</module>
+        <module>proxy-sample</module>
     </modules>
 
 </project>

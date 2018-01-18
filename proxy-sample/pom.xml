@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zhuzhiou.samples</groupId>
-    <artifactId>cglib-sample</artifactId>
+    <artifactId>proxy-sample</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>cglib-sample-parent</module>
-        <module>cglib-sample-helloworld</module>
+        <module>proxy-sample-parent</module>
+        <module>proxy-sample-cglib</module>
     </modules>
 
 </project>
